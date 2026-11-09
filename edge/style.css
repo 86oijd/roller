@@ -1,6 +1,8 @@
-/* -- DualSense Edge skin for GamepadViewer (Xbox layout, s=1) --
+/* -- DualSense Edge skin for GamepadViewer (Xbox layout) --
 OBS browser source:
-  URL:    https://gamepadviewer.com/?p=1&s=1&editcss=https://raw.githubusercontent.com/86oijd/roller/refs/heads/main/edge/style.css
+  URL:    https://gamepadviewer.com/?p=1&s=1&smeter=1&editcss=https://raw.githubusercontent.com/86oijd/roller/refs/heads/main/edge/style.css
+  (smeter=1 makes the triggers fill like a progress bar)
+  Custom CSS box in OBS: leave only the default body line
   Size:   807 x 651
 Images live in the /edge folder of github.com/86oijd/roller.
 */
@@ -11,8 +13,7 @@ body {
     overflow: hidden;
 }
 
-.controller.xbox,
-.controller.xbox.disconnected {
+body .controller[class] {
     background: url("https://raw.githubusercontent.com/86oijd/roller/refs/heads/main/edge/base.png") no-repeat;
     background-size: 807px 651px;
     width: 807px;
@@ -22,7 +23,7 @@ body {
 }
 
 /* every group spans the whole canvas; children are placed absolutely */
-.xbox .triggers, .xbox .bumpers, .xbox .arrows, .xbox .abxy, .xbox .sticks, .xbox .dpad {
+body .controller .triggers, body .controller .bumpers, body .controller .arrows, body .controller .abxy, body .controller .sticks, body .controller .dpad {
     position: absolute;
     left: 0;
     top: 0;
@@ -30,7 +31,7 @@ body {
     height: 651px;
 }
 
-.xbox .trigger, .xbox .bumper, .xbox .back, .xbox .start, .xbox .button, .xbox .stick, .xbox .face {
+body .controller .trigger, body .controller .touchpad, body .controller .bumper, body .controller .back, body .controller .start, body .controller .button, body .controller .stick, body .controller .face {
     position: absolute;
     float: none !important;
     background-repeat: no-repeat !important;
@@ -39,47 +40,55 @@ body {
     transform: none !important;
 }
 
-.xbox .quadrant { display: none; }
+body .controller .quadrant, body .controller .meta,
+body .controller .wheels, body .controller .fstick, body .controller .trigger-button { display: none !important; }
 
-/* triggers: glow strength follows how far you pull them */
-.xbox .trigger { opacity: 0; }
-.xbox .trigger.left  { background-image: url("https://raw.githubusercontent.com/86oijd/roller/refs/heads/main/edge/trigger-l.png"); left: 93px; top: 14px; width: 124px; height: 62px; }
-.xbox .trigger.right { background-image: url("https://raw.githubusercontent.com/86oijd/roller/refs/heads/main/edge/trigger-r.png"); left: 590px; top: 14px; width: 124px; height: 62px; }
+/* dimmed when gamepadviewer can't see the controller */
+body .controller.disconnected { opacity: .35; }
+
+/* triggers: fill bottom-up with smeter=1 (fade without it) */
+body .controller .trigger { opacity: 0; }
+body .controller .trigger.left  { background-image: url("https://raw.githubusercontent.com/86oijd/roller/refs/heads/main/edge/trigger-l.png"); left: 107px; top: 6px; width: 93px; height: 91px; }
+body .controller .trigger.right { background-image: url("https://raw.githubusercontent.com/86oijd/roller/refs/heads/main/edge/trigger-r.png"); left: 605px; top: 6px; width: 93px; height: 91px; }
+
+/* touchpad click */
+body .controller .touchpad { display: block !important; opacity: 0; background-image: url("https://raw.githubusercontent.com/86oijd/roller/refs/heads/main/edge/touchpad.png"); left: 230px; top: 97px; width: 348px; height: 170px; }
+body .controller .touchpad.pressed { opacity: 1; }
 
 /* bumpers */
-.xbox .bumper { opacity: 0; }
-.xbox .bumper.pressed { opacity: 1; }
-.xbox .bumper.left  { background-image: url("https://raw.githubusercontent.com/86oijd/roller/refs/heads/main/edge/bumper-l.png"); left: 95px; top: 38px; width: 120px; height: 45px; }
-.xbox .bumper.right { background-image: url("https://raw.githubusercontent.com/86oijd/roller/refs/heads/main/edge/bumper-r.png"); left: 592px; top: 38px; width: 120px; height: 45px; }
+body .controller .bumper { opacity: 0; }
+body .controller .bumper.pressed { opacity: 1; }
+body .controller .bumper.left  { background-image: url("https://raw.githubusercontent.com/86oijd/roller/refs/heads/main/edge/bumper-l.png"); left: 95px; top: 84px; width: 120px; height: 45px; }
+body .controller .bumper.right { background-image: url("https://raw.githubusercontent.com/86oijd/roller/refs/heads/main/edge/bumper-r.png"); left: 592px; top: 84px; width: 120px; height: 45px; }
 
 /* create / options */
-.xbox .back, .xbox .start { opacity: 0; }
-.xbox .back.pressed, .xbox .start.pressed { opacity: 1; }
-.xbox .back  { background-image: url("https://raw.githubusercontent.com/86oijd/roller/refs/heads/main/edge/create.png"); left: 199px; top: 71px; width: 33px; height: 43px; }
-.xbox .start { background-image: url("https://raw.githubusercontent.com/86oijd/roller/refs/heads/main/edge/options.png"); left: 576px; top: 71px; width: 33px; height: 43px; }
+body .controller .back, body .controller .start { opacity: 0; }
+body .controller .back.pressed, body .controller .start.pressed { opacity: 1; }
+body .controller .back  { background-image: url("https://raw.githubusercontent.com/86oijd/roller/refs/heads/main/edge/create.png"); left: 199px; top: 117px; width: 33px; height: 43px; }
+body .controller .start { background-image: url("https://raw.githubusercontent.com/86oijd/roller/refs/heads/main/edge/options.png"); left: 576px; top: 117px; width: 33px; height: 43px; }
 
 /* face buttons (drawn in the base photo; glow only when pressed)
    a = cross, b = circle, x = square, y = triangle */
-.xbox .button { background-image: none; opacity: 1; margin: 0 !important; }
-.xbox .a { left: 617px; top: 199px; width: 73px; height: 73px; }
-.xbox .b { left: 674px; top: 143px; width: 73px; height: 73px; }
-.xbox .x { left: 560px; top: 142px; width: 73px; height: 73px; }
-.xbox .y { left: 616px; top: 85px; width: 73px; height: 73px; }
-.xbox .a.pressed { background-image: url("https://raw.githubusercontent.com/86oijd/roller/refs/heads/main/edge/cross-pressed.png"); }
-.xbox .b.pressed { background-image: url("https://raw.githubusercontent.com/86oijd/roller/refs/heads/main/edge/circle-pressed.png"); }
-.xbox .x.pressed { background-image: url("https://raw.githubusercontent.com/86oijd/roller/refs/heads/main/edge/square-pressed.png"); }
-.xbox .y.pressed { background-image: url("https://raw.githubusercontent.com/86oijd/roller/refs/heads/main/edge/triangle-pressed.png"); }
+body .controller .button { background-image: none; opacity: 1; margin: 0 !important; }
+body .controller .a { left: 617px; top: 245px; width: 73px; height: 73px; }
+body .controller .b { left: 674px; top: 189px; width: 73px; height: 73px; }
+body .controller .x { left: 560px; top: 188px; width: 73px; height: 73px; }
+body .controller .y { left: 616px; top: 131px; width: 73px; height: 73px; }
+body .controller .a.pressed { background-image: url("https://raw.githubusercontent.com/86oijd/roller/refs/heads/main/edge/cross-pressed.png"); }
+body .controller .b.pressed { background-image: url("https://raw.githubusercontent.com/86oijd/roller/refs/heads/main/edge/circle-pressed.png"); }
+body .controller .x.pressed { background-image: url("https://raw.githubusercontent.com/86oijd/roller/refs/heads/main/edge/square-pressed.png"); }
+body .controller .y.pressed { background-image: url("https://raw.githubusercontent.com/86oijd/roller/refs/heads/main/edge/triangle-pressed.png"); }
 
 /* sticks (gamepadviewer moves these with margins) */
-.xbox .stick.left  { background-image: url("https://raw.githubusercontent.com/86oijd/roller/refs/heads/main/edge/stick-l.png"); left: 219px; top: 219px; width: 110px; height: 110px; }
-.xbox .stick.right { background-image: url("https://raw.githubusercontent.com/86oijd/roller/refs/heads/main/edge/stick-r.png"); left: 477px; top: 219px; width: 110px; height: 110px; }
-.xbox .stick.left.pressed  { background-image: url("https://raw.githubusercontent.com/86oijd/roller/refs/heads/main/edge/stick-l-pressed.png"); }
-.xbox .stick.right.pressed { background-image: url("https://raw.githubusercontent.com/86oijd/roller/refs/heads/main/edge/stick-r-pressed.png"); }
+body .controller .stick.left  { background-image: url("https://raw.githubusercontent.com/86oijd/roller/refs/heads/main/edge/stick-l.png"); left: 219px; top: 265px; width: 110px; height: 110px; }
+body .controller .stick.right { background-image: url("https://raw.githubusercontent.com/86oijd/roller/refs/heads/main/edge/stick-r.png"); left: 477px; top: 265px; width: 110px; height: 110px; }
+body .controller .stick.left.pressed  { background-image: url("https://raw.githubusercontent.com/86oijd/roller/refs/heads/main/edge/stick-l-pressed.png"); }
+body .controller .stick.right.pressed { background-image: url("https://raw.githubusercontent.com/86oijd/roller/refs/heads/main/edge/stick-r-pressed.png"); }
 
 /* d-pad */
-.xbox .face { opacity: 0; }
-.xbox .face.pressed { opacity: 1; }
-.xbox .face.up    { background-image: url("https://raw.githubusercontent.com/86oijd/roller/refs/heads/main/edge/dpad-up.png"); left: 121px; top: 103px; width: 67px; height: 75px; }
-.xbox .face.down  { background-image: url("https://raw.githubusercontent.com/86oijd/roller/refs/heads/main/edge/dpad-down.png"); left: 120px; top: 177px; width: 68px; height: 76px; }
-.xbox .face.left  { background-image: url("https://raw.githubusercontent.com/86oijd/roller/refs/heads/main/edge/dpad-left.png"); left: 77px; top: 146px; width: 78px; height: 65px; }
-.xbox .face.right { background-image: url("https://raw.githubusercontent.com/86oijd/roller/refs/heads/main/edge/dpad-right.png"); left: 154px; top: 145px; width: 78px; height: 66px; }
+body .controller .face { opacity: 0; }
+body .controller .face.pressed { opacity: 1; }
+body .controller .face.up    { background-image: url("https://raw.githubusercontent.com/86oijd/roller/refs/heads/main/edge/dpad-up.png"); left: 121px; top: 149px; width: 67px; height: 75px; }
+body .controller .face.down  { background-image: url("https://raw.githubusercontent.com/86oijd/roller/refs/heads/main/edge/dpad-down.png"); left: 120px; top: 223px; width: 68px; height: 76px; }
+body .controller .face.left  { background-image: url("https://raw.githubusercontent.com/86oijd/roller/refs/heads/main/edge/dpad-left.png"); left: 77px; top: 192px; width: 78px; height: 65px; }
+body .controller .face.right { background-image: url("https://raw.githubusercontent.com/86oijd/roller/refs/heads/main/edge/dpad-right.png"); left: 154px; top: 191px; width: 78px; height: 66px; }
