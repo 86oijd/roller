@@ -14,7 +14,7 @@ body {
 }
 
 body .controller[class] {
-    background: url("https://raw.githubusercontent.com/86oijd/roller/ebddfafaf1e7558ecced75e9fc9be14a38b16d01/edge/base.png") no-repeat;
+    background: url("https://raw.githubusercontent.com/86oijd/roller/8c8892179a03f9d7507f7d4309addf8ad8f37c89/edge/base.png") no-repeat;
     background-size: 807px 651px;
     width: 807px;
     height: 651px;
@@ -48,24 +48,24 @@ body .controller.disconnected { opacity: .35; }
 
 /* triggers: fill bottom-up with smeter=1 (fade without it) */
 body .controller .trigger { opacity: 0; }
-body .controller .trigger.left  { background-image: url("https://raw.githubusercontent.com/86oijd/roller/ebddfafaf1e7558ecced75e9fc9be14a38b16d01/edge/trigger-l.png"); left: 107px; top: 6px; width: 93px; height: 91px; }
-body .controller .trigger.right { background-image: url("https://raw.githubusercontent.com/86oijd/roller/ebddfafaf1e7558ecced75e9fc9be14a38b16d01/edge/trigger-r.png"); left: 605px; top: 6px; width: 93px; height: 91px; }
+body .controller .trigger.left  { background-image: url("https://raw.githubusercontent.com/86oijd/roller/8c8892179a03f9d7507f7d4309addf8ad8f37c89/edge/trigger-l.png"); left: 107px; top: 6px; width: 93px; height: 91px; }
+body .controller .trigger.right { background-image: url("https://raw.githubusercontent.com/86oijd/roller/8c8892179a03f9d7507f7d4309addf8ad8f37c89/edge/trigger-r.png"); left: 605px; top: 6px; width: 93px; height: 91px; }
 
 /* touchpad click */
-body .controller .touchpad { display: block !important; opacity: 0; background-image: url("https://raw.githubusercontent.com/86oijd/roller/ebddfafaf1e7558ecced75e9fc9be14a38b16d01/edge/touchpad.png"); left: 230px; top: 97px; width: 348px; height: 170px; }
+body .controller .touchpad { display: block !important; opacity: 0; background-image: url("https://raw.githubusercontent.com/86oijd/roller/8c8892179a03f9d7507f7d4309addf8ad8f37c89/edge/touchpad.png"); left: 230px; top: 97px; width: 348px; height: 170px; }
 body .controller .touchpad.pressed { opacity: 1; }
 
 /* bumpers */
 body .controller .bumper { opacity: 0; }
 body .controller .bumper.pressed { opacity: 1; }
-body .controller .bumper.left  { background-image: url("https://raw.githubusercontent.com/86oijd/roller/ebddfafaf1e7558ecced75e9fc9be14a38b16d01/edge/bumper-l.png"); left: 95px; top: 84px; width: 120px; height: 45px; }
-body .controller .bumper.right { background-image: url("https://raw.githubusercontent.com/86oijd/roller/ebddfafaf1e7558ecced75e9fc9be14a38b16d01/edge/bumper-r.png"); left: 592px; top: 84px; width: 120px; height: 45px; }
+body .controller .bumper.left  { background-image: url("https://raw.githubusercontent.com/86oijd/roller/8c8892179a03f9d7507f7d4309addf8ad8f37c89/edge/bumper-l.png"); left: 95px; top: 84px; width: 120px; height: 45px; }
+body .controller .bumper.right { background-image: url("https://raw.githubusercontent.com/86oijd/roller/8c8892179a03f9d7507f7d4309addf8ad8f37c89/edge/bumper-r.png"); left: 592px; top: 84px; width: 120px; height: 45px; }
 
 /* create / options */
 body .controller .back, body .controller .start { opacity: 0; }
 body .controller .back.pressed, body .controller .start.pressed { opacity: 1; }
-body .controller .back  { background-image: url("https://raw.githubusercontent.com/86oijd/roller/ebddfafaf1e7558ecced75e9fc9be14a38b16d01/edge/create.png"); left: 199px; top: 117px; width: 33px; height: 43px; }
-body .controller .start { background-image: url("https://raw.githubusercontent.com/86oijd/roller/ebddfafaf1e7558ecced75e9fc9be14a38b16d01/edge/options.png"); left: 576px; top: 117px; width: 33px; height: 43px; }
+body .controller .back  { background-image: url("https://raw.githubusercontent.com/86oijd/roller/8c8892179a03f9d7507f7d4309addf8ad8f37c89/edge/create.png"); left: 199px; top: 117px; width: 33px; height: 43px; }
+body .controller .start { background-image: url("https://raw.githubusercontent.com/86oijd/roller/8c8892179a03f9d7507f7d4309addf8ad8f37c89/edge/options.png"); left: 576px; top: 117px; width: 33px; height: 43px; }
 
 /* face buttons (drawn in the base photo; glow only when pressed)
    a = cross, b = circle, x = square, y = triangle */
@@ -74,21 +74,21 @@ body .controller .a { left: 617px; top: 245px; width: 73px; height: 73px; }
 body .controller .b { left: 674px; top: 189px; width: 73px; height: 73px; }
 body .controller .x { left: 560px; top: 188px; width: 73px; height: 73px; }
 body .controller .y { left: 616px; top: 131px; width: 73px; height: 73px; }
-body .controller .a.pressed { background-image: url("https://raw.githubusercontent.com/86oijd/roller/ebddfafaf1e7558ecced75e9fc9be14a38b16d01/edge/cross-pressed.png"); }
-body .controller .b.pressed { background-image: url("https://raw.githubusercontent.com/86oijd/roller/ebddfafaf1e7558ecced75e9fc9be14a38b16d01/edge/circle-pressed.png"); }
-body .controller .x.pressed { background-image: url("https://raw.githubusercontent.com/86oijd/roller/ebddfafaf1e7558ecced75e9fc9be14a38b16d01/edge/square-pressed.png"); }
-body .controller .y.pressed { background-image: url("https://raw.githubusercontent.com/86oijd/roller/ebddfafaf1e7558ecced75e9fc9be14a38b16d01/edge/triangle-pressed.png"); }
+body .controller .a.pressed { background-image: url("https://raw.githubusercontent.com/86oijd/roller/8c8892179a03f9d7507f7d4309addf8ad8f37c89/edge/cross-pressed.png"); }
+body .controller .b.pressed { background-image: url("https://raw.githubusercontent.com/86oijd/roller/8c8892179a03f9d7507f7d4309addf8ad8f37c89/edge/circle-pressed.png"); }
+body .controller .x.pressed { background-image: url("https://raw.githubusercontent.com/86oijd/roller/8c8892179a03f9d7507f7d4309addf8ad8f37c89/edge/square-pressed.png"); }
+body .controller .y.pressed { background-image: url("https://raw.githubusercontent.com/86oijd/roller/8c8892179a03f9d7507f7d4309addf8ad8f37c89/edge/triangle-pressed.png"); }
 
 /* sticks (gamepadviewer moves these with margins) */
-body .controller .stick.left  { background-image: url("https://raw.githubusercontent.com/86oijd/roller/ebddfafaf1e7558ecced75e9fc9be14a38b16d01/edge/stick-l.png"); left: 219px; top: 265px; width: 110px; height: 110px; }
-body .controller .stick.right { background-image: url("https://raw.githubusercontent.com/86oijd/roller/ebddfafaf1e7558ecced75e9fc9be14a38b16d01/edge/stick-r.png"); left: 477px; top: 265px; width: 110px; height: 110px; }
-body .controller .stick.left.pressed  { background-image: url("https://raw.githubusercontent.com/86oijd/roller/ebddfafaf1e7558ecced75e9fc9be14a38b16d01/edge/stick-l-pressed.png"); }
-body .controller .stick.right.pressed { background-image: url("https://raw.githubusercontent.com/86oijd/roller/ebddfafaf1e7558ecced75e9fc9be14a38b16d01/edge/stick-r-pressed.png"); }
+body .controller .stick.left  { background-image: url("https://raw.githubusercontent.com/86oijd/roller/8c8892179a03f9d7507f7d4309addf8ad8f37c89/edge/stick-l.png"); left: 219px; top: 265px; width: 110px; height: 110px; }
+body .controller .stick.right { background-image: url("https://raw.githubusercontent.com/86oijd/roller/8c8892179a03f9d7507f7d4309addf8ad8f37c89/edge/stick-r.png"); left: 477px; top: 265px; width: 110px; height: 110px; }
+body .controller .stick.left.pressed  { background-image: url("https://raw.githubusercontent.com/86oijd/roller/8c8892179a03f9d7507f7d4309addf8ad8f37c89/edge/stick-l-pressed.png"); }
+body .controller .stick.right.pressed { background-image: url("https://raw.githubusercontent.com/86oijd/roller/8c8892179a03f9d7507f7d4309addf8ad8f37c89/edge/stick-r-pressed.png"); }
 
 /* d-pad */
 body .controller .face { opacity: 0; }
 body .controller .face.pressed { opacity: 1; }
-body .controller .face.up    { background-image: url("https://raw.githubusercontent.com/86oijd/roller/ebddfafaf1e7558ecced75e9fc9be14a38b16d01/edge/dpad-up.png"); left: 121px; top: 149px; width: 67px; height: 75px; }
-body .controller .face.down  { background-image: url("https://raw.githubusercontent.com/86oijd/roller/ebddfafaf1e7558ecced75e9fc9be14a38b16d01/edge/dpad-down.png"); left: 120px; top: 223px; width: 68px; height: 76px; }
-body .controller .face.left  { background-image: url("https://raw.githubusercontent.com/86oijd/roller/ebddfafaf1e7558ecced75e9fc9be14a38b16d01/edge/dpad-left.png"); left: 77px; top: 192px; width: 78px; height: 65px; }
-body .controller .face.right { background-image: url("https://raw.githubusercontent.com/86oijd/roller/ebddfafaf1e7558ecced75e9fc9be14a38b16d01/edge/dpad-right.png"); left: 154px; top: 191px; width: 78px; height: 66px; }
+body .controller .face.up    { background-image: url("https://raw.githubusercontent.com/86oijd/roller/8c8892179a03f9d7507f7d4309addf8ad8f37c89/edge/dpad-up.png"); left: 121px; top: 149px; width: 67px; height: 75px; }
+body .controller .face.down  { background-image: url("https://raw.githubusercontent.com/86oijd/roller/8c8892179a03f9d7507f7d4309addf8ad8f37c89/edge/dpad-down.png"); left: 120px; top: 223px; width: 68px; height: 76px; }
+body .controller .face.left  { background-image: url("https://raw.githubusercontent.com/86oijd/roller/8c8892179a03f9d7507f7d4309addf8ad8f37c89/edge/dpad-left.png"); left: 77px; top: 192px; width: 78px; height: 65px; }
+body .controller .face.right { background-image: url("https://raw.githubusercontent.com/86oijd/roller/8c8892179a03f9d7507f7d4309addf8ad8f37c89/edge/dpad-right.png"); left: 154px; top: 191px; width: 78px; height: 66px; }
