@@ -14,7 +14,7 @@ body {
 }
 
 body .controller[class] {
-    background: url("https://raw.githubusercontent.com/86oijd/roller/0008d604ea0f0d3635860fffb0fedbb59587c3ae/edge/base.png") no-repeat;
+    background: url("https://raw.githubusercontent.com/86oijd/roller/f59bc9298ac8900fc0324468f98a6a1bd0d596c0/edge/base.png") no-repeat;
     background-size: 807px 651px;
     width: 807px;
     height: 651px;
@@ -48,24 +48,24 @@ body .controller.disconnected { opacity: .35; }
 
 /* triggers: fill bottom-up with smeter=1 (fade without it) */
 body .controller .trigger { opacity: 0; }
-body .controller .trigger.left  { background-image: url("https://raw.githubusercontent.com/86oijd/roller/0008d604ea0f0d3635860fffb0fedbb59587c3ae/edge/trigger-l.png"); left: 107px; top: 6px; width: 93px; height: 91px; }
-body .controller .trigger.right { background-image: url("https://raw.githubusercontent.com/86oijd/roller/0008d604ea0f0d3635860fffb0fedbb59587c3ae/edge/trigger-r.png"); left: 605px; top: 6px; width: 93px; height: 91px; }
+body .controller .trigger.left  { background-image: url("https://raw.githubusercontent.com/86oijd/roller/f59bc9298ac8900fc0324468f98a6a1bd0d596c0/edge/trigger-l.png"); left: 107px; top: 6px; width: 93px; height: 91px; }
+body .controller .trigger.right { background-image: url("https://raw.githubusercontent.com/86oijd/roller/f59bc9298ac8900fc0324468f98a6a1bd0d596c0/edge/trigger-r.png"); left: 605px; top: 6px; width: 93px; height: 91px; }
 
 /* touchpad click */
-body .controller .touchpad { display: block !important; opacity: 0; background-image: url("https://raw.githubusercontent.com/86oijd/roller/0008d604ea0f0d3635860fffb0fedbb59587c3ae/edge/touchpad.png"); left: 230px; top: 97px; width: 348px; height: 170px; }
+body .controller .touchpad { display: block !important; opacity: 0; background-image: url("https://raw.githubusercontent.com/86oijd/roller/f59bc9298ac8900fc0324468f98a6a1bd0d596c0/edge/touchpad.png"); left: 230px; top: 97px; width: 348px; height: 170px; }
 body .controller .touchpad.pressed { opacity: 1; }
 
 /* bumpers */
 body .controller .bumper { opacity: 0; }
 body .controller .bumper.pressed { opacity: 1; }
-body .controller .bumper.left  { background-image: url("https://raw.githubusercontent.com/86oijd/roller/0008d604ea0f0d3635860fffb0fedbb59587c3ae/edge/bumper-l.png"); left: 95px; top: 84px; width: 120px; height: 45px; }
-body .controller .bumper.right { background-image: url("https://raw.githubusercontent.com/86oijd/roller/0008d604ea0f0d3635860fffb0fedbb59587c3ae/edge/bumper-r.png"); left: 592px; top: 84px; width: 120px; height: 45px; }
+body .controller .bumper.left  { background-image: url("https://raw.githubusercontent.com/86oijd/roller/f59bc9298ac8900fc0324468f98a6a1bd0d596c0/edge/bumper-l.png"); left: 95px; top: 84px; width: 120px; height: 45px; }
+body .controller .bumper.right { background-image: url("https://raw.githubusercontent.com/86oijd/roller/f59bc9298ac8900fc0324468f98a6a1bd0d596c0/edge/bumper-r.png"); left: 592px; top: 84px; width: 120px; height: 45px; }
 
 /* create / options */
 body .controller .back, body .controller .start { opacity: 0; }
 body .controller .back.pressed, body .controller .start.pressed { opacity: 1; }
-body .controller .back  { background-image: url("https://raw.githubusercontent.com/86oijd/roller/0008d604ea0f0d3635860fffb0fedbb59587c3ae/edge/create.png"); left: 199px; top: 117px; width: 33px; height: 43px; }
-body .controller .start { background-image: url("https://raw.githubusercontent.com/86oijd/roller/0008d604ea0f0d3635860fffb0fedbb59587c3ae/edge/options.png"); left: 576px; top: 117px; width: 33px; height: 43px; }
+body .controller .back  { background-image: url("https://raw.githubusercontent.com/86oijd/roller/f59bc9298ac8900fc0324468f98a6a1bd0d596c0/edge/create.png"); left: 199px; top: 117px; width: 33px; height: 43px; }
+body .controller .start { background-image: url("https://raw.githubusercontent.com/86oijd/roller/f59bc9298ac8900fc0324468f98a6a1bd0d596c0/edge/options.png"); left: 576px; top: 117px; width: 33px; height: 43px; }
 
 /* face buttons (drawn in the base photo; glow only when pressed)
    a = cross, b = circle, x = square, y = triangle */
@@ -74,38 +74,38 @@ body .controller .a { left: 617px; top: 245px; width: 73px; height: 73px; }
 body .controller .b { left: 674px; top: 189px; width: 73px; height: 73px; }
 body .controller .x { left: 560px; top: 188px; width: 73px; height: 73px; }
 body .controller .y { left: 616px; top: 131px; width: 73px; height: 73px; }
-body .controller .a.pressed { background-image: url("https://raw.githubusercontent.com/86oijd/roller/0008d604ea0f0d3635860fffb0fedbb59587c3ae/edge/cross-pressed.png"); }
-body .controller .b.pressed { background-image: url("https://raw.githubusercontent.com/86oijd/roller/0008d604ea0f0d3635860fffb0fedbb59587c3ae/edge/circle-pressed.png"); }
-body .controller .x.pressed { background-image: url("https://raw.githubusercontent.com/86oijd/roller/0008d604ea0f0d3635860fffb0fedbb59587c3ae/edge/square-pressed.png"); }
-body .controller .y.pressed { background-image: url("https://raw.githubusercontent.com/86oijd/roller/0008d604ea0f0d3635860fffb0fedbb59587c3ae/edge/triangle-pressed.png"); }
+body .controller .a.pressed { background-image: url("https://raw.githubusercontent.com/86oijd/roller/f59bc9298ac8900fc0324468f98a6a1bd0d596c0/edge/cross-pressed.png"); }
+body .controller .b.pressed { background-image: url("https://raw.githubusercontent.com/86oijd/roller/f59bc9298ac8900fc0324468f98a6a1bd0d596c0/edge/circle-pressed.png"); }
+body .controller .x.pressed { background-image: url("https://raw.githubusercontent.com/86oijd/roller/f59bc9298ac8900fc0324468f98a6a1bd0d596c0/edge/square-pressed.png"); }
+body .controller .y.pressed { background-image: url("https://raw.githubusercontent.com/86oijd/roller/f59bc9298ac8900fc0324468f98a6a1bd0d596c0/edge/triangle-pressed.png"); }
 
 /* sticks (gamepadviewer moves these with margins) */
-body .controller .stick.left  { background-image: url("https://raw.githubusercontent.com/86oijd/roller/0008d604ea0f0d3635860fffb0fedbb59587c3ae/edge/stick-l.png"); left: 219px; top: 265px; width: 110px; height: 110px; }
-body .controller .stick.right { background-image: url("https://raw.githubusercontent.com/86oijd/roller/0008d604ea0f0d3635860fffb0fedbb59587c3ae/edge/stick-r.png"); left: 477px; top: 265px; width: 110px; height: 110px; }
-body .controller .stick.left.pressed  { background-image: url("https://raw.githubusercontent.com/86oijd/roller/0008d604ea0f0d3635860fffb0fedbb59587c3ae/edge/stick-l-pressed.png"); }
-body .controller .stick.right.pressed { background-image: url("https://raw.githubusercontent.com/86oijd/roller/0008d604ea0f0d3635860fffb0fedbb59587c3ae/edge/stick-r-pressed.png"); }
+body .controller .stick.left  { background-image: url("https://raw.githubusercontent.com/86oijd/roller/f59bc9298ac8900fc0324468f98a6a1bd0d596c0/edge/stick-l.png"); left: 219px; top: 265px; width: 110px; height: 110px; }
+body .controller .stick.right { background-image: url("https://raw.githubusercontent.com/86oijd/roller/f59bc9298ac8900fc0324468f98a6a1bd0d596c0/edge/stick-r.png"); left: 477px; top: 265px; width: 110px; height: 110px; }
+body .controller .stick.left.pressed  { background-image: url("https://raw.githubusercontent.com/86oijd/roller/f59bc9298ac8900fc0324468f98a6a1bd0d596c0/edge/stick-l-pressed.png"); }
+body .controller .stick.right.pressed { background-image: url("https://raw.githubusercontent.com/86oijd/roller/f59bc9298ac8900fc0324468f98a6a1bd0d596c0/edge/stick-r-pressed.png"); }
 
 /* d-pad */
 body .controller .face { opacity: 0; }
 body .controller .face.pressed { opacity: 1; }
-body .controller .face.up    { background-image: url("https://raw.githubusercontent.com/86oijd/roller/0008d604ea0f0d3635860fffb0fedbb59587c3ae/edge/dpad-up.png"); left: 121px; top: 149px; width: 67px; height: 75px; }
-body .controller .face.down  { background-image: url("https://raw.githubusercontent.com/86oijd/roller/0008d604ea0f0d3635860fffb0fedbb59587c3ae/edge/dpad-down.png"); left: 120px; top: 223px; width: 68px; height: 76px; }
-body .controller .face.left  { background-image: url("https://raw.githubusercontent.com/86oijd/roller/0008d604ea0f0d3635860fffb0fedbb59587c3ae/edge/dpad-left.png"); left: 77px; top: 192px; width: 78px; height: 65px; }
-body .controller .face.right { background-image: url("https://raw.githubusercontent.com/86oijd/roller/0008d604ea0f0d3635860fffb0fedbb59587c3ae/edge/dpad-right.png"); left: 154px; top: 191px; width: 78px; height: 66px; }
+body .controller .face.up    { background-image: url("https://raw.githubusercontent.com/86oijd/roller/f59bc9298ac8900fc0324468f98a6a1bd0d596c0/edge/dpad-up.png"); left: 121px; top: 149px; width: 67px; height: 75px; }
+body .controller .face.down  { background-image: url("https://raw.githubusercontent.com/86oijd/roller/f59bc9298ac8900fc0324468f98a6a1bd0d596c0/edge/dpad-down.png"); left: 120px; top: 223px; width: 68px; height: 76px; }
+body .controller .face.left  { background-image: url("https://raw.githubusercontent.com/86oijd/roller/f59bc9298ac8900fc0324468f98a6a1bd0d596c0/edge/dpad-left.png"); left: 77px; top: 192px; width: 78px; height: 65px; }
+body .controller .face.right { background-image: url("https://raw.githubusercontent.com/86oijd/roller/f59bc9298ac8900fc0324468f98a6a1bd0d596c0/edge/dpad-right.png"); left: 154px; top: 191px; width: 78px; height: 66px; }
 
 /* occasional glitch on pressed buttons: every few seconds a pressed button's glow
-   flickers for a split second with a red/cyan colour split and a tape-tear slice,
+   flickers for a split second with a white/grey ghost image and a tape-tear slice,
    like a VHS tracking error. Most presses show no glitch at all. Each button runs on
    its own clock so they do not all flicker together. */
 @keyframes press-glitch {
     0%, 100% { filter: none; clip-path: inset(-12px); }
     /* first flicker: torn top half, torn bottom half, whole */
-    40%   { filter: drop-shadow(6px 0 0 rgba(213, 49, 59, .9)) drop-shadow(-6px 0 0 rgba(0, 229, 255, .8)); clip-path: inset(-12px -12px 50% -12px); }
-    41.5% { filter: drop-shadow(-5px 0 0 rgba(213, 49, 59, .9)) drop-shadow(5px 0 0 rgba(0, 229, 255, .8)); clip-path: inset(45% -12px -12px -12px); }
-    43%   { filter: drop-shadow(3px 0 0 rgba(213, 49, 59, .75)) drop-shadow(-3px 0 0 rgba(0, 229, 255, .65)); clip-path: inset(-12px); }
+    40%   { filter: drop-shadow(6px 0 0 rgba(236, 235, 230, .9)) drop-shadow(-6px 0 0 rgba(120, 120, 120, .8)); clip-path: inset(-12px -12px 50% -12px); }
+    41.5% { filter: drop-shadow(-5px 0 0 rgba(236, 235, 230, .9)) drop-shadow(5px 0 0 rgba(120, 120, 120, .8)); clip-path: inset(45% -12px -12px -12px); }
+    43%   { filter: drop-shadow(3px 0 0 rgba(236, 235, 230, .75)) drop-shadow(-3px 0 0 rgba(120, 120, 120, .65)); clip-path: inset(-12px); }
     44.5% { filter: none; clip-path: inset(-12px); }
     /* second, shorter flicker */
-    81%   { filter: drop-shadow(-4px 0 0 rgba(213, 49, 59, .8)) drop-shadow(4px 0 0 rgba(0, 229, 255, .7)); clip-path: inset(-12px); }
+    81%   { filter: drop-shadow(-4px 0 0 rgba(236, 235, 230, .8)) drop-shadow(4px 0 0 rgba(120, 120, 120, .7)); clip-path: inset(-12px); }
     82.5% { filter: none; clip-path: inset(-12px); }
 }
 /* these are invisible unless pressed, so the clock can run all the time */
@@ -120,3 +120,42 @@ body .controller .x, body .controller .face.left, body .controller .start       
 body .controller .y, body .controller .face.right                                 { animation-delay: -2.7s; }
 /* stick caps are always visible, so only a clicked stick may glitch */
 body .controller .stick.pressed { animation: press-glitch 4.7s steps(1, end) infinite; }
+
+/* animated touchpad: a soft cross over tape static, cut to the touchpad's shape.
+   Blended as light (screen), so the real touchpad surface stays visible underneath. */
+body .controller[class]::after {
+    content: '';
+    position: absolute;
+    left: 230px; top: 97px; width: 348px; height: 170px;
+    -webkit-mask: url("https://raw.githubusercontent.com/86oijd/roller/f59bc9298ac8900fc0324468f98a6a1bd0d596c0/edge/touchpad.png") center / 100% 100% no-repeat;
+            mask: url("https://raw.githubusercontent.com/86oijd/roller/f59bc9298ac8900fc0324468f98a6a1bd0d596c0/edge/touchpad.png") center / 100% 100% no-repeat;
+    pointer-events: none;
+    mix-blend-mode: screen;
+    background:
+        linear-gradient(#ecebe6, #ecebe6) center 44% / 7px 96px no-repeat,
+        linear-gradient(#ecebe6, #ecebe6) center 33% / 50px 7px no-repeat,
+        radial-gradient(ellipse 34% 62% at 50% 46%, rgba(236,235,230,.22), transparent 100%),
+        linear-gradient(rgba(0,0,0,.2), rgba(0,0,0,.2)),
+        url("https://raw.githubusercontent.com/86oijd/roller/f59bc9298ac8900fc0324468f98a6a1bd0d596c0/edge/tp-static.png") 0 0 / 348px 680px no-repeat;
+    animation: tp-static .32s steps(1, end) infinite, tp-flicker 7.3s steps(1, end) infinite;
+}
+/* the static: four frames, stepped */
+@keyframes tp-static {
+    0%   { background-position: center 44%, center 33%, 0 0, 0 0, 0 0; }
+    25%  { background-position: center 44%, center 33%, 0 0, 0 0, 0 -170px; }
+    50%  { background-position: center 44%, center 33%, 0 0, 0 0, 0 -340px; }
+    75%  { background-position: center 44%, center 33%, 0 0, 0 0, 0 -510px; }
+}
+/* weak-signal brightness dips and one bright surge */
+@keyframes tp-flicker {
+    0%, 100% { filter: brightness(.9) contrast(1.1); }
+    22%   { filter: brightness(.45) contrast(1.1); }
+    22.8% { filter: brightness(.9) contrast(1.1); }
+    23.4% { filter: brightness(.5) contrast(1.1); }
+    24%   { filter: brightness(.9) contrast(1.1); }
+    61%   { filter: brightness(1.5) contrast(1.3); }
+    61.7% { filter: brightness(.9) contrast(1.1); }
+}
+/* touchpad click: the pad lights up softly and the cross flares */
+body .controller .touchpad.pressed { opacity: .4; }
+body .controller[class]:has(.touchpad.pressed)::after { filter: brightness(2.2) contrast(1.2) !important; }
